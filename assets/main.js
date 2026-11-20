@@ -144,7 +144,16 @@
       top.appendChild(el("p", "award-funder mono", a.funder));
       top.appendChild(el("p", "award-amount", money.format(a.amount)));
       card.appendChild(top);
-      card.appendChild(el("h3", "award-title", a.title));
+      var aTitle = el("h3", "award-title");
+      if (a.link) {
+        var aLink = el("a", null, a.title); aLink.href = a.link;
+        aTitle.appendChild(aLink);
+      } else { aTitle.textContent = a.title; }
+      card.appendChild(aTitle);
+      if (a.link) {
+        var more = el("a", "award-more mono", "Program page →"); more.href = a.link;
+        card.appendChild(more);
+      }
       var meta = el("p", "award-meta mono");
       meta.textContent = [a.id, a.dates, a.role].filter(Boolean).join("  ·  ");
       card.appendChild(meta);
@@ -238,6 +247,11 @@
       a.addEventListener("click", function () { nav.classList.remove("is-open"); toggle.setAttribute("aria-expanded", "false"); });
     });
   }
+
+  // Portraits placed directly in a page: <div data-portrait="photo-name" data-name="Full Name"></div>
+  document.querySelectorAll("[data-portrait]").forEach(function (slot) {
+    slot.replaceWith(portrait({ name: slot.getAttribute("data-name"), photo: slot.getAttribute("data-portrait") }));
+  });
 
   // Copy email
   var copyBtn = document.getElementById("copy-email");

@@ -168,7 +168,8 @@ window.SAFE = {
     { funder: "OSU-CHS Office of the VP for Research", id: "152339-7", amount: 10000, dates: "2026–2027", role: "PI",
       title: "The Confession Booth Pilot: Healed & Healer Prototypes for Collective Healing through Radical Anonymity" },
     { funder: "OSMA Foundation", id: "", amount: 5000, dates: "2026–2027", role: "PI",
-      title: "Bearing Witness: A Medical Student Enrichment Program in Patient Safety and Physician Professionalism" }
+      title: "Bearing Witness: A Medical Student Enrichment Program in Patient Safety and Physician Professionalism",
+      link: "bearing-witness.html" }
   ],
 
   pastAwards: [
