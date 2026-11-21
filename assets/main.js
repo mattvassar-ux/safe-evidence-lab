@@ -147,11 +147,14 @@
       var aTitle = el("h3", "award-title");
       if (a.link) {
         var aLink = el("a", null, a.title); aLink.href = a.link;
+        if (/^https?:/.test(a.link)) { aLink.target = "_blank"; aLink.rel = "noopener"; }
         aTitle.appendChild(aLink);
       } else { aTitle.textContent = a.title; }
       card.appendChild(aTitle);
       if (a.link) {
-        var more = el("a", "award-more mono", "Program page →"); more.href = a.link;
+        var ext = /^https?:/.test(a.link);
+        var more = el("a", "award-more mono", ext ? "Project site ↗" : "Program page →"); more.href = a.link;
+        if (ext) { more.target = "_blank"; more.rel = "noopener"; }
         card.appendChild(more);
       }
       var meta = el("p", "award-meta mono");
