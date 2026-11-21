@@ -518,3 +518,5 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .skill-list { row-gap: 32px; }
 .validator-head { margin: 0 0 8px; }
 .repo-btn { margin-top: 20px; display: inline-block; }
+.contact .deliv-note { color: inherit; opacity: .85; }
+.contact .deliv-note a { color: inherit; }
