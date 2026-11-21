@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Harms Reporting Integrity · SAFE Evidence Lab</title>
+<meta name="description" content="An NIH NIGMS-funded R01 (R01GM169341) building validated measures of how completely and how candidly clinical trials report harms, and testing tools that help journals catch what goes missing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<meta property="og:title" content="Improving the Integrity of Harms Reporting">
+<meta property="og:description" content="NIH NIGMS R01GM169341 at the SAFE Evidence Lab, Oklahoma State University Center for Health Sciences.">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="SAFE Evidence Lab home">
+      <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span class="brand-text"><strong>SAFE</strong> Evidence Lab</span>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Sections">
+      <a href="index.html#research">Research</a>
+      <a href="index.html#projects" aria-current="page">Projects</a>
+      <a href="index.html#people">People</a>
+      <a href="index.html#funding">Funding</a>
+      <a href="index.html#publications">Publications</a>
+      <a href="index.html#training">Training</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero bw-hero" id="top">
+    <div class="wrap">
+      <p class="breadcrumb mono"><a href="index.html">SAFE Evidence Lab</a> <span aria-hidden="true">/</span> <a href="index.html#projects">Projects</a></p>
+      <div class="bw-hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">NIH · NIGMS · R01GM169341</p>
+          <h1 class="r01-title">Improving the Integrity of Harms Reporting</h1>
+          <p class="lede">Clinical trials record harms in public registries, but the published papers that doctors and guideline panels read often report fewer of them, or describe them in softer language. This project builds validated measures of that gap, tests whether it changes what happens downstream, and pilots tools that help journals catch it before publication.</p>
+        </div>
+
+        <aside class="funder-card" aria-labelledby="award-h">
+          <p class="funder-label mono" id="award-h">Award</p>
+          <dl class="award-facts">
+            <div><dt>Funder</dt><dd>National Institute of General Medical Sciences, NIH</dd></div>
+            <div><dt>Award number</dt><dd class="mono">1R01GM169341-01</dd></div>
+            <div><dt>Project period</dt><dd>Aug 2026 – Apr 2030</dd></div>
+            <div><dt>Institution</dt><dd>Oklahoma State University Center for Health Sciences</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE PROBLEM -->
+  <section class="section section-alt" aria-labelledby="gap-h">
+    <div class="wrap bw-two">
+      <div>
+        <p class="eyebrow">The problem</p>
+        <h2 id="gap-h">The registry says one thing. The paper says another.</h2>
+        <p class="section-intro">Across 16 registry-to-publication studies led by our medical student teams, the same pattern appeared in nearly every specialty we examined.</p>
+      </div>
+      <ul class="gap-list">
+        <li><span class="gap-mark" aria-hidden="true">—</span><div><h3>Missing counts</h3><p>Publications under-reported deaths and serious adverse events compared with the trial's own registry entry.</p></div></li>
+        <li><span class="gap-mark" aria-hidden="true">—</span><div><h3>Missing dropouts</h3><p>Discontinuations due to adverse events appeared in registries but rarely in the journal article.</p></div></li>
+        <li><span class="gap-mark" aria-hidden="true">—</span><div><h3>Unsupported reassurance</h3><p>Some papers stated that "no serious adverse events occurred" when the registry recorded them.</p></div></li>
+        <li><span class="gap-mark" aria-hidden="true">—</span><div><h3>Softened language</h3><p>Phrases like "well tolerated," "mild," and "transient" framed harms as smaller than the numbers showed.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- TWO MEASURES -->
+  <section class="section" aria-labelledby="measures-h">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="eyebrow">Two new measures</p>
+        <h2 id="measures-h">Scoring what a trial reports, and how it says it</h2>
+        <p class="section-intro">Each trial is scored from its paired ClinicalTrials.gov record and journal article. Both indices run from 0 to 1 and can be compared across specialties, sponsors, and years.</p>
+      </header>
+
+      <div class="indices">
+        <article class="index-card">
+          <div class="index-head">
+            <p class="index-abbr mono">HRI</p>
+            <div>
+              <h3>Harm Reporting Integrity Index</h3>
+              <p class="index-sub">Higher is better. Measures how completely and accurately harms are reported.</p>
+            </div>
+          </div>
+          <ul class="components">
+            <li><span class="comp-name">Completeness</span><span class="comp-desc">Are serious adverse events, deaths, the safety population, the time at risk, and discontinuations due to harm all reported?</span></li>
+            <li><span class="comp-name">Concordance</span><span class="comp-desc">Do the paper's counts of serious events, deaths, and discontinuations match the registry?</span></li>
+            <li><span class="comp-name">Transparency</span><span class="comp-desc">Are the safety population, the definition of a serious event, and the reporting window stated clearly?</span></li>
+            <li><span class="comp-name">Timeliness</span><span class="comp-desc">How long after the trial ends do harms appear in print? Full credit within 36 months.</span></li>
+          </ul>
+        </article>
+
+        <article class="index-card index-card-fri">
+          <div class="index-head">
+            <p class="index-abbr mono">FRI</p>
+            <div>
+              <h3>Framing Risk Index</h3>
+              <p class="index-sub">Lower is better. Measures language that downplays or obscures harm.</p>
+            </div>
+          </div>
+          <ul class="components">
+            <li><span class="comp-name">Unsupported absence claims</span><span class="comp-desc">"No serious adverse events occurred" when the registry shows at least one.</span></li>
+            <li><span class="comp-name">Positivity over burden</span><span class="comp-desc">"Well tolerated" in trials with meaningful rates of serious harm.</span></li>
+            <li><span class="comp-name">Comparator masking</span><span class="comp-desc">Relative risk only ("50% fewer events") with no absolute counts.</span></li>
+            <li><span class="comp-name">Hedging intensity</span><span class="comp-desc">The share of harms sentences softened by words like "mild," "transient," or "rarely."</span></li>
+            <li><span class="comp-name">Selective specificity</span><span class="comp-desc">Minor events itemized in detail while serious ones are lumped together.</span></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- AIMS -->
+  <section class="section section-alt" aria-labelledby="aims-h">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="eyebrow">Specific aims</p>
+        <h2 id="aims-h">Measure, explain, intervene</h2>
+      </header>
+      <ol class="phases aims">
+        <li class="phase">
+          <p class="phase-when mono">Aim 1 · Measure</p>
+          <h3>Build and validate the indices</h3>
+          <p>Assemble a large corpus of paired registry records and publications for phase II–IV adult trials completed 2010–2023. Develop the HRI and FRI against a gold-standard human annotation, with inter-rater reliability of at least 0.70, then automate scoring with natural language processing.</p>
+        </li>
+        <li class="phase">
+          <p class="phase-when mono">Aim 2 · Explain</p>
+          <h3>Trace the downstream consequences</h3>
+          <p>Test whether reporting quality predicts what happens next: FDA safety label changes, uptake into clinical guidelines, citation influence, and investigator careers. Model whether sponsor practices, journal checklists, and data-sharing norms act through reporting quality.</p>
+        </li>
+        <li class="phase">
+          <p class="phase-when mono">Aim 3 · Intervene</p>
+          <h3>Pilot tools for journals</h3>
+          <p>Co-design interventions with journal editors, reviewers, and regulators: an automated registry–publication discrepancy flag, an editorial checklist, and framing prompts. Test them retrospectively and simulate their effect on reporting quality.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- DELIVERABLES -->
+  <section class="section" aria-labelledby="deliv-h">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="eyebrow">What the project will produce</p>
+        <h2 id="deliv-h">Open tools, shared data, trained researchers</h2>
+      </header>
+      <dl class="facts deliv-facts">
+        <div><dt>Open-source software packages</dt><dd>3+</dd></div>
+        <div><dt>Peer-reviewed manuscripts</dt><dd>5+</dd></div>
+        <div><dt>National workshops or webinars</dt><dd>2+</dd></div>
+        <div><dt>Medical students trained</dt><dd>20+</dd></div>
+      </dl>
+      <p class="deliv-note">Datasets and code will be shared on OSF and GitHub within six months of each paper's acceptance. Tools will be released under an Apache 2.0 license, with tutorials for editors and investigators.</p>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section section-alt" aria-labelledby="team-h">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="eyebrow">Project team</p>
+        <h2 id="team-h">Who is doing the work</h2>
+      </header>
+
+      <div class="people-group">
+        <h3 class="group-title">Investigators</h3>
+        <div class="people-grid bw-team">
+          <article class="person">
+            <div data-portrait="matt-vassar" data-name="Matt Vassar"></div>
+            <div class="person-body">
+              <h4 class="person-name">Matt Vassar, PhD</h4>
+              <p class="person-role mono">Contact PI</p>
+              <p class="person-focus">Director of the SAFE Evidence Lab. Leads the registry–publication research program and the student research pipeline behind it.</p>
+            </div>
+          </article>
+          <article class="person">
+            <div data-portrait="alicia-ito-ford" data-name="Alicia Ito Ford"></div>
+            <div class="person-body">
+              <h4 class="person-name">Alicia Ito Ford, PhD</h4>
+              <p class="person-role mono">Multiple PI</p>
+              <p class="person-focus">Neuropsychologist at OSU-CHS and multiple principal investigator on the award.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="people-group">
+        <h3 class="group-title">Student Researchers</h3>
+        <div class="people-grid" id="r01-students"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GROUNDWORK -->
+  <section class="section" aria-labelledby="ground-h">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="eyebrow">Groundwork</p>
+        <h2 id="ground-h">Published studies behind the proposal</h2>
+        <p class="section-intro">Registry–publication comparisons from our student teams, the preliminary work this R01 builds on.</p>
+      </header>
+      <ol class="pubs" id="r01-pubs"></ol>
+    </div>
+  </section>
+
+  <!-- ACKNOWLEDGMENT + CONTACT -->
+  <section class="section contact" id="contact" aria-labelledby="ack-h">
+    <div class="wrap contact-grid">
+      <div>
+        <p class="eyebrow">Acknowledgment</p>
+        <h2 id="ack-h">Supported by the National Institutes of Health</h2>
+        <p class="nih-statement">Research reported on this page is supported by the National Institute of General Medical Sciences of the National Institutes of Health under Award Number R01GM169341. The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health.</p>
+      </div>
+      <address class="contact-card">
+        <p class="contact-label mono">Questions or collaboration</p>
+        <p class="contact-row"><span id="email-text">matt.vassar@okstate.edu</span>
+          <button type="button" class="copy-btn" id="copy-email">Copy</button></p>
+        <p class="contact-label mono">Address</p>
+        <p>SAFE Evidence Lab<br>Oklahoma State University Center for Health Sciences<br>1111 W. 17th St., Tulsa, OK 74107</p>
+      </address>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>© <span id="year">2026</span> SAFE Evidence Lab · Oklahoma State University Center for Health Sciences</p>
+    <p><a href="index.html">SAFE Evidence Lab home</a></p>
+  </div>
+</footer>
+
+<script>
+/* R01 page content. Edit these lists to update the page. */
+window.R01 = {
+  // Student researchers. Add a headshot at images/team/<photo>.jpg to replace the initials.
+  students: [
+    { name: "Callie Walsh",       photo: "callie-walsh" },
+    { name: "Colby Parsons",      photo: "colby-parsons" },
+    { name: "Esther Oommen",      photo: "esther-oommen" },
+    { name: "Jaleel Zubayr",      photo: "jaleel-zubayr" },
+    { name: "Rida Durrani",       photo: "rida-durrani" },
+    { name: "Sara Lau",           photo: "sara-lau" },
+    { name: "Vivin Chrysostor Albert Santhappa", photo: "vivin-santhappa" }
+  ],
+  pubs: [
+    { year: 2026, journal: "BMJ Open", doi: "10.1136/bmjopen-2026-117978", authors: "Camasso NC, Kirby K, et al.",
+      title: "MedDRA adoption and adverse event reporting quality in gastrointestinal and abdominal surgery randomised controlled trials" },
+    { year: 2026, journal: "JB & JS Open Access", doi: "10.2106/JBJS.OA.25.00346", authors: "Camasso N, et al.",
+      title: "Assessing the completeness of safety reporting in clinical trials of total knee arthroplasty: a registry-publication comparison study" },
+    { year: 2026, journal: "Clinical Kidney Journal", doi: "10.1093/ckj/sfag244", authors: "Denton N, Hashemi L, et al.",
+      title: "Safety reporting in chronic kidney disease clinical trials: a comparison of ClinicalTrials.gov registries and published reports" },
+    { year: 2026, journal: "BMC Urology", doi: "10.1186/s12894-026-02077-6", authors: "Itani M, Livsey T, et al.",
+      title: "Evaluation of safety reporting in interventional trials of benign prostatic hyperplasia: a registry-publication comparison study" },
+    { year: 2026, journal: "BMJ Open", doi: "10.1136/bmjopen-2025-112962", authors: "Lackey M, et al.",
+      title: "Cross-sectional analysis of safety reporting in sleep disorder clinical trials" },
+    { year: 2026, journal: "Otolaryngology–Head and Neck Surgery", doi: "10.1002/ohn.70159", authors: "Lutze T, Kirby K, et al.",
+      title: "Selective harm reporting in inflammatory sinonasal trials: a systematic review of registry-publication concordance" },
+    { year: 2026, journal: "Regional Anesthesia and Pain Medicine", doi: "10.1136/rapm-2025-107055", authors: "McCormick C, Waller D, et al.",
+      title: "Assessing the completeness of safety reporting in clinical trials of regional anesthesia interventions: a registry-publication comparison systematic review" },
+    { year: 2026, journal: "Clinical Drug Investigation", doi: "10.1007/s40261-026-01561-z", authors: "Rowe M, et al.",
+      title: "Assessing the completeness of adverse event reporting in clinical trials of psoriasis treatments: a registry-publication comparison study" },
+    { year: 2025, journal: "Oral Oncology", doi: "10.1016/j.oraloncology.2025.107840", authors: "Chaudhry M, et al.",
+      title: "Safety reporting in head and neck squamous cell carcinoma clinical trials: a comparative analysis of ClinicalTrials.gov data and published research" },
+    { year: 2025, journal: "Scientific Reports", doi: "10.1038/s41598-025-24290-3", authors: "Elghzali A, et al.",
+      title: "Adverse event reporting discrepancies between ClinicalTrials.gov and published glaucoma randomized controlled trials" },
+    { year: 2025, journal: "BMC Medical Research Methodology", doi: "10.1186/s12874-025-02486-5", authors: "Boyne N, et al.",
+      title: "Discrepancies in safety reporting for chronic back pain clinical trials: an observational study from ClinicalTrials.gov and publications" }
+  ]
+};
+(function () {
+  var R = window.R01;
+  var host = document.getElementById("r01-students");
+  R.students.forEach(function (s) {
+    var a = document.createElement("article"); a.className = "person";
+    var slot = document.createElement("div");
+    slot.setAttribute("data-portrait", s.photo); slot.setAttribute("data-name", s.name);
+    var b = document.createElement("div"); b.className = "person-body";
+    var h = document.createElement("h4"); h.className = "person-name"; h.textContent = s.name;
+    var r = document.createElement("p"); r.className = "person-role mono"; r.textContent = s.role || "Student Researcher";
+    b.appendChild(h); b.appendChild(r); a.appendChild(slot); a.appendChild(b); host.appendChild(a);
+  });
+  var list = document.getElementById("r01-pubs");
+  R.pubs.forEach(function (p) {
+    var li = document.createElement("li"); li.className = "pub";
+    li.innerHTML = '<div class="pub-side"><span class="pub-year mono"></span></div><div class="pub-main"><h3 class="pub-title"><a target="_blank" rel="noopener"></a></h3><p class="pub-authors"></p><p class="pub-journal"><em></em><span class="mono pub-doi"></span></p></div>';
+    li.querySelector(".pub-year").textContent = p.year;
+    var a = li.querySelector("a"); a.href = "https://doi.org/" + p.doi; a.textContent = p.title;
+    li.querySelector(".pub-authors").textContent = p.authors;
+    li.querySelector("em").textContent = p.journal;
+    li.querySelector(".pub-doi").textContent = "doi:" + p.doi;
+    list.appendChild(li);
+  });
+})();
+</script>
+<script src="assets/data.js"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>

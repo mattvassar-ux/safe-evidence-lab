@@ -150,7 +150,8 @@ window.SAFE = {
 
   awards: [
     { funder: "NIH · NIGMS", id: "1R01GM169341-01", amount: 1010074, dates: "2026–2030", role: "Contact PI",
-      title: "SoS: BIO: Improving the Integrity of Harms Reporting in Biomedical Research: A Science-of-Science Framework for Measurement, Causality, and Intervention" },
+      title: "SoS: BIO: Improving the Integrity of Harms Reporting in Biomedical Research: A Science-of-Science Framework for Measurement, Causality, and Intervention",
+      link: "harms-reporting.html" },
     { funder: "U.S. Department of Education · FIPSE", id: "P116J251629", amount: 3998541, dates: "2026–2029", role: "PI",
       title: "Witnessing Before Deliberating: A Testimony-Based Framework for Campus Civil Discourse" },
     { funder: "NSF · Office of Advanced Cyberinfrastructure", id: "Award 2611896", amount: 279504, dates: "2026–2028", role: "PI",
