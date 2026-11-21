@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Computational Meta-Research Training · SAFE Evidence Lab</title>
+<meta name="description" content="An NSF CyberTraining pilot that teaches biomedical students to audit clinical trial evidence at scale with cloud tools, version control, containers, and open-source validators.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<meta property="og:title" content="Cloud-Enabled Computational Meta-Research Training">
+<meta property="og:description" content="NSF CyberTraining Pilot (Award 2611896) at the SAFE Evidence Lab, OSU Center for Health Sciences.">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="SAFE Evidence Lab home">
+      <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span class="brand-text"><strong>SAFE</strong> Evidence Lab</span>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Sections">
+      <a href="index.html#research">Research</a>
+      <a href="index.html#projects" aria-current="page">Projects</a>
+      <a href="index.html#people">People</a>
+      <a href="index.html#funding">Funding</a>
+      <a href="index.html#publications">Publications</a>
+      <a href="index.html#training">Training</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero bw-hero" id="top">
+    <div class="wrap">
+      <p class="breadcrumb mono"><a href="index.html">SAFE Evidence Lab</a> <span aria-hidden="true">/</span> <a href="index.html#projects">Projects</a></p>
+      <div class="bw-hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">NSF CyberTraining · Pilot</p>
+          <h1 class="r01-title">Computational Meta-Research Training</h1>
+          <p class="lede">An eight-week summer institute that teaches biomedical students to audit clinical trial evidence the way computational scientists work: querying registries through APIs, running reproducible checks in the cloud, and keeping every decision in version control.</p>
+        </div>
+
+        <aside class="funder-card" aria-labelledby="award-h">
+          <p class="funder-label mono" id="award-h">Award</p>
+          <dl class="award-facts">
+            <div><dt>Funder</dt><dd>U.S. National Science Foundation, Office of Advanced Cyberinfrastructure</dd></div>
+            <div><dt>Award number</dt><dd class="mono">2611896</dd></div>
+            <div><dt>Project period</dt><dd>Oct 2026 – Sep 2028</dd></div>
+            <div><dt>Cohorts</dt><dd>Summer 2027 and Summer 2028</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section class="section section-alt" aria-labelledby="why-h">
+    <div class="wrap bw-two">
+      <div>
+        <p class="eyebrow">Why it matters</p>
+        <h2 id="why-h">Hand-checking trials can't keep up with the record.</h2>
+      </div>
+      <div class="bw-prose">
+        <p>ClinicalTrials.gov alone holds more than 400,000 studies. For over a decade our students have audited them by hand, and that work has produced hundreds of papers on unpublished results, switched outcomes, and missing harms. But one student can check only 50 to 100 trials in a summer, and two careful reviewers often disagree with no record of why.</p>
+        <p>The bottleneck is no longer understanding why transparency matters. It is computational skill. This pilot nests a cloud-enabled training track inside our existing summer program so students learn to audit thousands of trials reproducibly, and can keep doing it at home institutions without their own computing clusters.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPETENCIES -->
+  <section class="section" aria-labelledby="skills-h">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="eyebrow">What trainees learn</p>
+        <h2 id="skills-h">Five competencies, taught through real trial data</h2>
+        <p class="section-intro">Students don't learn APIs or Docker in the abstract. They learn them by auditing actual trials, from the first query to a finished, reproducible capstone.</p>
+      </header>
+      <ul class="eval-list skill-list">
+        <li><p class="role-label mono">01 · Data access</p><h3>Distributed data access</h3><p>Query trial registries programmatically, handle pagination and rate limits, and combine records from several sources.</p></li>
+        <li><p class="role-label mono">02 · Reproducibility</p><h3>Reproducible workflows</h3><p>Build containerized environments, track work with Git and GitHub, and document analyses in notebooks.</p></li>
+        <li><p class="role-label mono">03 · Validation</p><h3>Automated validation</h3><p>Run structured validators, read their outputs critically, and trace every flag back to its source evidence.</p></li>
+        <li><p class="role-label mono">04 · Appraisal</p><h3>Evidence evaluation</h3><p>Apply reporting standards such as CONSORT, ICMJE, and FDAAA to recognize where trial reporting falls short.</p></li>
+        <li><p class="role-label mono">05 · Collaboration</p><h3>Collaborative science</h3><p>Review each other's code, share work through open repositories, and communicate technical findings clearly.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- THE INSTITUTE -->
+  <section class="section section-alt" aria-labelledby="weeks-h">
+    <div class="wrap bw-two">
+      <div>
+        <p class="eyebrow">The summer institute</p>
+        <h2 id="weeks-h">Eight weeks, one capstone audit</h2>
+        <p class="section-intro">A short self-paced primer in the shell, Git, and Python or R comes first. No prior programming experience is required.</p>
+      </div>
+      <ol class="timeline weeks">
+        <li><p class="tl-year mono">Week 1</p><h3>Meta-research and the ClinicalTrials.gov API</h3><p>Computational thinking and your first programmatic queries.</p></li>
+        <li><p class="tl-year mono">Week 2</p><h3>Version control and notebooks</h3><p>Git, GitHub, and reproducible Jupyter workflows.</p></li>
+        <li><p class="tl-year mono">Week 3</p><h3>Containers and validators</h3><p>Docker, then running FAIROTrials validators on sample records.</p></li>
+        <li><p class="tl-year mono">Week 4</p><h3>Registry–publication comparison</h3><p>Edge cases, false positives, and findings that need a human call.</p></li>
+        <li><p class="tl-year mono">Week 5</p><h3>Working at scale</h3><p>Batch processing, parallel workflows, and evidence synthesis.</p></li>
+        <li><p class="tl-year mono">Weeks 6–7</p><h3>Capstone</h3><p>An independent computational audit, refined through peer code review.</p></li>
+        <li><p class="tl-year mono">Week 8</p><h3>Presentations</h3><p>Capstone talks and final skills assessment.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- TOOLS -->
+  <section class="section" aria-labelledby="tools-h">
+    <div class="wrap bw-two">
+      <div>
+        <p class="eyebrow">Open tools</p>
+        <h2 id="tools-h">A cloud lab and the FAIROTrials validators</h2>
+        <p class="section-intro">Trainees work in a browser-based Jupyter environment in the cloud, so nothing has to be installed and no local computing cluster is needed. The same workflows also run on OSU's High Performance Computing Center or a personal laptop.</p>
+        <p><a class="btn btn-ghost repo-btn" href="https://github.com/mattvassar-ux/fairotrials-validators" target="_blank" rel="noopener">View the validators on GitHub ↗</a></p>
+      </div>
+      <div>
+        <p class="role-label mono validator-head">Seven validators check</p>
+        <ul class="gap-list">
+          <li><span class="gap-mark" aria-hidden="true">—</span><div><h3>FAIR metadata and identifiers</h3></div></li>
+          <li><span class="gap-mark" aria-hidden="true">—</span><div><h3>FDAAA results-reporting timeliness</h3></div></li>
+          <li><span class="gap-mark" aria-hidden="true">—</span><div><h3>Link accessibility</h3></div></li>
+          <li><span class="gap-mark" aria-hidden="true">—</span><div><h3>Registered versus published primary outcomes</h3></div></li>
+          <li><span class="gap-mark" aria-hidden="true">—</span><div><h3>CONSORT-Harms completeness</h3></div></li>
+          <li><span class="gap-mark" aria-hidden="true">—</span><div><h3>Registry–publication linkage</h3></div></li>
+          <li><span class="gap-mark" aria-hidden="true">—</span><div><h3>Data-sharing transparency</h3></div></li>
+        </ul>
+        <p class="deliv-note">Validators are screening aids. A flag prompts a closer look at the evidence; it is not a verdict. Advanced trainees can propose improvements and submit pull requests, which are merged only after mentor review.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO + OUTPUTS -->
+  <section class="section section-alt" aria-labelledby="who-h">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="eyebrow">Who it's for</p>
+        <h2 id="who-h">Two cohorts of biomedical learners</h2>
+        <p class="section-intro">Medical students, graduate students in public health, epidemiology, and biostatistics, pharmacy and nursing doctoral students, and early-career clinical researchers. We especially welcome learners from institutions without local computing resources, including rural and regional campuses and EPSCoR states.</p>
+      </header>
+      <dl class="facts deliv-facts">
+        <div><dt>Trainees per summer</dt><dd>10–15</dd></div>
+        <div><dt>Institute length</dt><dd>8 weeks</dd></div>
+        <div><dt>Prior coding required</dt><dd>None</dd></div>
+        <div><dt>Software cost</dt><dd>$0</dd></div>
+      </dl>
+      <p class="deliv-note">All curriculum materials, workflows, sample datasets, and assessment tools will be shared openly under CC-BY licenses. Interested in a future cohort? Email us to be notified when applications open.</p>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section" aria-labelledby="team-h">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="eyebrow">Project team</p>
+        <h2 id="team-h">Who teaches and evaluates</h2>
+      </header>
+      <div class="people-grid bw-team" id="ct-team"></div>
+    </div>
+  </section>
+
+  <!-- ACKNOWLEDGMENT + CONTACT -->
+  <section class="section contact" id="contact" aria-labelledby="ack-h">
+    <div class="wrap contact-grid">
+      <div>
+        <p class="eyebrow">Acknowledgment</p>
+        <h2 id="ack-h">Supported by the National Science Foundation</h2>
+        <p class="nih-statement">This material is based upon work supported by the U.S. National Science Foundation under Award No. 2611896. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of the National Science Foundation.</p>
+      </div>
+      <address class="contact-card">
+        <p class="contact-label mono">Questions or future cohorts</p>
+        <p class="contact-row"><span id="email-text">matt.vassar@okstate.edu</span>
+          <button type="button" class="copy-btn" id="copy-email">Copy</button></p>
+        <p class="contact-label mono">Address</p>
+        <p>SAFE Evidence Lab<br>Oklahoma State University Center for Health Sciences<br>1111 W. 17th St., Tulsa, OK 74107</p>
+      </address>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>© <span id="year">2026</span> SAFE Evidence Lab · Oklahoma State University Center for Health Sciences</p>
+    <p><a href="index.html">SAFE Evidence Lab home</a></p>
+  </div>
+</footer>
+
+<script>
+/* Project team. Headshots come from images/team/<photo>.jpg; initials show until one exists. */
+window.CT_TEAM = [
+  { name: "Matt Vassar, PhD", photo: "matt-vassar", role: "Principal Investigator",
+    focus: "Leads the project, curriculum design, recruitment, and meta-research instruction." },
+  { name: "Fares Z. Najar, PhD", photo: "fares-najar", role: "Co-Principal Investigator",
+    focus: "Bioinformatics research scientist at the OSU High Performance Computing Center. Leads the cloud and HPC infrastructure and computational instruction." },
+  { name: "Arnab Mukherjee, PhD", photo: "arnab-mukherjee", role: "Curriculum Evaluator",
+    focus: "Computer science and machine learning postdoctoral fellow in the SAFE Evidence Lab." },
+  { name: "Candida Barlow, PhD", photo: "candida-barlow", role: "Consultant",
+    focus: "Director of the OSU-CHS Clinical Trials Office. Brings clinical trial operations and regulatory expertise." },
+  { name: "Denna Wheeler, PhD", photo: "denna-wheeler", role: "Independent Evaluator",
+    focus: "Executive Director of the OSU-CHS Center for Rural Health. Leads the external evaluation." }
+];
+(function () {
+  var host = document.getElementById("ct-team");
+  window.CT_TEAM.forEach(function (p) {
+    var a = document.createElement("article"); a.className = "person";
+    var slot = document.createElement("div");
+    slot.setAttribute("data-portrait", p.photo); slot.setAttribute("data-name", p.name);
+    var b = document.createElement("div"); b.className = "person-body";
+    [["h4","person-name",p.name],["p","person-role mono",p.role],["p","person-focus",p.focus]].forEach(function (x) {
+      var e = document.createElement(x[0]); e.className = x[1]; e.textContent = x[2]; b.appendChild(e);
+    });
+    a.appendChild(slot); a.appendChild(b); host.appendChild(a);
+  });
+})();
+</script>
+<script src="assets/data.js"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>

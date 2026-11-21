@@ -513,3 +513,8 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 
 .projects-band { border-top: 1px solid var(--rule); }
 .deliv-facts > div:last-child dd { font: 800 var(--step-2) var(--display); padding-top: 0; }
+
+/* CyberTraining page */
+.skill-list { row-gap: 32px; }
+.validator-head { margin: 0 0 8px; }
+.repo-btn { margin-top: 20px; display: inline-block; }
