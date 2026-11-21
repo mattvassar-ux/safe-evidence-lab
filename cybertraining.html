@@ -166,6 +166,18 @@
     </div>
   </section>
 
+  <!-- SUMMER TEAM LEADS -->
+  <section class="section section-alt" aria-labelledby="leads-h">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="eyebrow">Summer team leads</p>
+        <h2 id="leads-h">The students who run the summer teams</h2>
+        <p class="section-intro">These medical students lead the June and July Computational Meta-Research project teams that the institute is built into. They coordinate team members, keep data collection on track, and mentor new students. CyberTraining trainees are recruited separately through an open application.</p>
+      </header>
+      <div class="cohorts" id="ct-leads"></div>
+    </div>
+  </section>
+
   <!-- ACKNOWLEDGMENT + CONTACT -->
   <section class="section contact" id="contact" aria-labelledby="ack-h">
     <div class="wrap contact-grid">
@@ -221,6 +233,40 @@ window.CT_TEAM = [
 })();
 </script>
 <script src="assets/data.js"></script>
+<script>
+/* Summer Computational Meta-Research team leads, pulled from assets/data.js. */
+(function () {
+  var host = document.getElementById("ct-leads");
+  var S = window.SAFE || {}; if (!host || !S.students) return;
+  var groups = [
+    { id: "summer-2027", title: "Summer 2027" },
+    { id: "summer-2028", title: "Summer 2028" }
+  ];
+  function mk(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text) e.textContent = text; return e; }
+  groups.forEach(function (g) {
+    var members = S.students.filter(function (s) {
+      return (s.groups || []).indexOf(g.id) > -1 && /Computational Meta-Research/.test(s.work || "");
+    });
+    if (!members.length) return;
+    var sec = mk("section", "cohort"); sec.dataset.group = g.id;
+    var head = mk("div", "cohort-head");
+    head.appendChild(mk("h4", "cohort-title", g.title));
+    head.appendChild(mk("span", "cohort-count mono", members.length + " leads"));
+    sec.appendChild(head);
+    var grid = mk("div", "people-grid");
+    members.forEach(function (p) {
+      var a = mk("article", "person");
+      var slot = mk("div"); slot.setAttribute("data-portrait", p.photo); slot.setAttribute("data-name", p.name);
+      var b = mk("div", "person-body");
+      var m = (p.work || "").match(/^(June|July) (\d{4})/);
+      b.appendChild(mk("h4", "person-name", p.name));
+      b.appendChild(mk("p", "person-role mono", "Team Lead" + (m ? " · " + m[1] + " " + m[2] : "")));
+      a.appendChild(slot); a.appendChild(b); grid.appendChild(a);
+    });
+    sec.appendChild(grid); host.appendChild(sec);
+  });
+})();
+</script>
 <script src="assets/main.js"></script>
 </body>
 </html>
